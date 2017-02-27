@@ -8,7 +8,7 @@ class FansController < ApplicationController
 
   #show
   def show
-    @fan = fan.find(params[:id])
+    @fan = Fan.find(params[:id])
   end
 
   # new

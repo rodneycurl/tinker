@@ -3,5 +3,6 @@
 <ul>
   <% @fans.each do |fan| %>
     <%= link_to fan.name, fan_path(fan) %>
+    <br>
   <% end %>
 </ul>

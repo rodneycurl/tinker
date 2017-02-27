@@ -8,8 +8,8 @@ class PostsController < ApplicationController
 
   # new
   def new
-    @fan = Fan.find(params[:house_id])
-    @post = @fan.posts.new
+    @fan = Fan.find(params[:fan_id])
+    # @post = @fan.posts.new
   end
 
   # create
