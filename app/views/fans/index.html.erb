@@ -1,0 +1,7 @@
+<h2>Fans</h2>
+<%= link_to "Add New Fan", new_fan_path %>
+<ul>
+  <% @fans.each do |fan| %>
+    <%= link_to fan.name, fan_path(fan) %>
+  <% end %>
+</ul>

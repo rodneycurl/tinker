@@ -3,7 +3,7 @@ class FansController < ApplicationController
   #before_action :authenticate_user!, only: [:add_favorite, :remove_favorite]
   # index
   def index
-    @fans = fan.all
+    @fans = Fan.all
   end
 
   #show
