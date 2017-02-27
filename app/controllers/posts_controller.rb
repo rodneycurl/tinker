@@ -9,14 +9,14 @@ class PostsController < ApplicationController
   # new
   def new
     @fan = Fan.find(params[:fan_id])
-    # @post = @fan.posts.new
+    @post = @fan.posts.new
   end
 
   # create
   def create
     @fan = Fan.find(params[:fan_id])
     @post = @fan.posts.create(post_params)
-    redirect_to fan_post_path(@fan, @post)
+    redirect_to fan_posts_path(@fan, @post)
   end
 
   #show
@@ -50,6 +50,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:shoe_name, :shoe_photo, :fan_message)
+    params.require(:post).permit(:shoe_name, :shoe_photo, :fan_message, :fan)
   end
 end
