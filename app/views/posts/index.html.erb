@@ -1,9 +1,11 @@
-<h2>Posts <a href="/posts/new">(+)</a></h2>
+<h2>Posts</h2>
+<%= link_to "New Post", new_fan_post_path %>
 
 <ul>
-  <% @posts.each do |post| %>
+  <% @fan.posts.each do |post| %>
+
     <li>
-      <a href="/posts/<%= post.id %>">
+      <a href="fans/<%= fan.id %>/posts/<%= post.id %>">
         <%= post.name %>
       </a>
     </li>

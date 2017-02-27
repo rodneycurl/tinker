@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   # index
   def index
+    @fan = Fan.find(params[:fan_id])
     @posts = Post.all
   end
 
@@ -21,8 +22,8 @@ class PostsController < ApplicationController
 
   #show
   def show
+    @fan = Fan.find(params[:fan_id])
     @post = Post.find(params[:id])
-    @fan = Fan.find(@post.fan_id)
   end
 
   # edit
@@ -50,6 +51,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:shoe_name, :shoe_photo, :fan_message, :fan)
+    params.require(:post).permit(:shoe_name, :shoe_photo, :fan_message, :fan_id)
   end
 end
