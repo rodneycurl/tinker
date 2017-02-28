@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  devise_for :fans
+  root to: 'posts#index'
+
+  get 'posts', to: 'posts#index'
+
+  resources :fans do
+    resources :posts, only: [:new, :create, :show, :edit, :update, :destroy]
+  end
 end

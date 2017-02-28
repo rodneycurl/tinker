@@ -9,6 +9,10 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= link_to "Sign Up", new_fan_registration_path %>
+    <%= link_to "Sign out", destroy_fan_session_path %>
     <%= yield %>
   </body>
 </html>
