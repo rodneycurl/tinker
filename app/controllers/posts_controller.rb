@@ -10,13 +10,14 @@ class PostsController < ApplicationController
   # new
   def new
     @fan = Fan.find(params[:fan_id])
-    @post = @fan.posts.new
+  @post = @fan.posts.new
+
   end
 
   # create
   def create
     @fan = Fan.find(params[:fan_id])
-    @post = @fan.posts.create(post_params)
+    @post = @fan.posts.create!(post_params)
     redirect_to fan_post_path(@fan, @post)
   end
 

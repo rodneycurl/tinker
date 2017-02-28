@@ -1,3 +1,3 @@
 class Post < ActiveRecord::Base
-  belongs_to :fans
+  belongs_to :fan
 end
