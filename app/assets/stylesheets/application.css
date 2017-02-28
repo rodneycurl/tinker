@@ -34,6 +34,18 @@ h4 {
   font-family: sans-serif;
 }
 
+.img {
+  position: relative;
+  width: 100%;
+}
+
+ul {
+  text-align: center;
+  position: relative;
+  left: 10px;
+}
+
+
 .shoe_photo_resize {
   /*position: relative;*/
   float: left;
