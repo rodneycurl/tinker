@@ -2,13 +2,17 @@
 <h4>Share your favorite shoe designs from Tinker Hatfield</h4>
 <ul>
   <% @posts.each do |post| %>
-    <li>
+    <!-- <li> -->
         <%= post.shoe_name %>
-        <%= post.shoe_photo %>
+        <br>
+        <img src= "<%= post.shoe_photo %>">
+        <br>
         <%= post.fan_message %>
         <br>
         <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
+        <br>
+        <br>
       </a>
-    </li>
+    <!-- </li> -->
   <% end %>
 </ul>
