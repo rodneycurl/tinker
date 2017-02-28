@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
   # index
   def index
-    @fan = Fan.find(params[:fan_id])
+    # @fan = Fan.find(params[:fan_id])
     @posts = Post.all
   end
 
@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   def create
     @fan = Fan.find(params[:fan_id])
     @post = @fan.posts.create(post_params)
-    redirect_to fan_posts_path(@fan, @post)
+    redirect_to fan_post_path(@fan, @post)
   end
 
   #show
