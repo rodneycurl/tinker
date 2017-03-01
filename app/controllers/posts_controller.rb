@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   # new
   def new
     @fan = Fan.find(params[:fan_id])
-  @post = @fan.posts.new
+    @post = @fan.posts.new
 
   end
 

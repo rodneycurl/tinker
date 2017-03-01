@@ -98,6 +98,18 @@ style for textarea {
   margin-bottom:-21px;
   width: 360px;
   height: 360px;
+
+/*UTILIZE FLEXBOX */
+  /*@media screen and (max-width: 600px){
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    order: 1;
+  }
+}*/
+
 }
 
 .shoe_photo_resize:hover {
@@ -107,40 +119,17 @@ style for textarea {
 .shoe_photo_resize {
   float: left;
   height:100%;
-  background-position: 50% 50%;
+  background-position: center;
   background-repeat:   no-repeat;
   background-size: cover;
   @include translateX(-50)
 }
-
-/*@import "compass/css3"*/
-
-/*.shoe_photo_resize {
-  float: left;*/
-  /*height:100%;*/
-  /*background-position: 50% 50%;
-  background-repeat:   no-repeat;
-  background-size: cover;*/
-  /*@include translateX(-50%)
-  max-height:100%;
-
-  @media(min-width: 800px) {
-    top: 50%;
-    left: 0;
-    max-height: none;
-    width: 100%;
-    @include translateY(-50%);
-  }*/
-/*}*/
 
 .shoe_details {
   color: rgba(255,255,255,1);
   background: black;
   opacity: 0.7;
   filter: alpha(opacity=50);
-  /*background: linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));
-  background: -webkit-linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));
-  background: -moz-linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));*/
   padding: 10px 0px 10px;
   line-height: 28px;
   text-align: center;
@@ -162,6 +151,53 @@ style for textarea {
   font-weight: bold;
 }
 
+.profilephoto img {
+  border-radius: 50%;
+  float: left;
+  outline-color: red;
+  width:128px;
+  margin: 10px;
+  border:10px solid #FF6600;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+}
+
+.faninfo h2 h3 {
+  float: right;
+}
+
+.faninfo h2 {
+  margin: 7px;
+}
+
+.fullwidthpixel {
+  margin: 1px;
+  padding: .5px;
+  background: #E7E7E7;
+}
+
+/*.fullwidthpixelhomepage {
+  margin: 0px;
+  padding: .5px;
+  background: #E7E7E7;
+}*/
+
+.newpostbox {
+  /*float: left;*/
+  height:100%;
+  /*background-position: 50% 50%;*/
+  background-repeat:   no-repeat;
+  background-size: cover;
+  @include translateX(-50)
+  font-weight: bold;
+  width: 360px;
+  height: 360px;
+  background-color: #333;
+  outline: #333 solid;
+}
+
+
 
 /*post.shoe_name {
   text-align: left;
@@ -173,3 +209,43 @@ style for textarea {
   text-align: center;
   font-family: sans-serif;
 }*/
+
+/*.posthistory {
+  float: left;
+  height:100%;
+  padding: 50px;
+  width: 40px;
+  height: 40px;
+  outline: #FF6600 solid;
+  text-align: center;
+  margin: 6px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size: cover;
+  @include translateX(-50)
+  font-weight: bold;*/
+  /*line-height: 28px;*/
+  /*transition: height .5s;*/
+  /*-webkit-transition: height .5s;*/
+  /*-moz-transition: height .5s;*/
+/*}*/
+
+/*@import "compass/css3"*/
+
+/*.shoe_photo_resize {
+  float: left;*/
+  /*height:100%;*/
+  /*background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size: cover;*/
+  /*@include translateX(-50%)
+  max-height:100%;
+
+  @media(min-width: 800px) {
+    top: 50%;
+    left: 0;
+    max-height: none;
+    width: 100%;
+    @include translateY(-50%);
+  }*/
+/*}*/
