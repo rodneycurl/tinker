@@ -34,33 +34,66 @@ h4 {
   font-family: sans-serif;
 }
 
-.img {
-  position: relative;
-  width: 100%;
-}
-
-ul {
+style for textarea {
   text-align: center;
   position: relative;
   left: 10px;
+  font-size: 20px;
+  margin: auto 0;
+  font-family: sans-serif;
 }
 
+.shoe_container {
+  display: inline-block;
+  position:relative;
+  margin-right:-3px;
+  margin-bottom:-17px;
+}
+
+.shoe_details {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));
+  background: -webkit-linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));
+  background: -moz-linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));
+  padding: 10px 0px 10px;
+  line-height: 28px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+}
 
 .shoe_photo_resize {
-  /*position: relative;*/
+  /*position: absolute;*/
   float: left;
   /*overflow: hidden;*/
   width:  400px;
   height: 400px;
-  background-position: 50% 50%;
+  /*background-position: 50% 50%;
   background-repeat:   no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 
-post.shoe_name {
+.fanmessage {
+  font-weight: bold;
+}
+
+
+/*post.shoe_name {
   text-align: left;
   font-family: sans-serif;
-}
+  margin: auto;
+}*/
 
 /*li {
   text-align: center;

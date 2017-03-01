@@ -1,17 +1,17 @@
 <h2>Welcome To Tinker's World</h2>
 <p>Share your favorite shoe designs from Tinker Hatfield</p>
-<ul>
+
+
   <% @posts.each do |post| %>
-    <!-- <li> -->
+<div class= "shoe_container">
+       <p class= "shoe_details">
         <%= post.shoe_name %>
         <br>
         <%= post.fan_message %>
         <br>
         <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
+      </p>
         <br>
         <img src= "<%= post.shoe_photo %>" class="shoe_photo_resize">
-        <br>
-      </a>
-    <!-- </li> -->
+</div>
   <% end %>
-</ul>
