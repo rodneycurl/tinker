@@ -13,14 +13,24 @@
  *= require_tree .
  *= require_self
  */
+/*body {
+  background-color: #FF6600
+}*/
+a {
+  font-size: 12px;
+  color: #FF6600;
+}
 body {
   margin: 0;
 }
+
 p {
   text-align: left;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 19px;
+  font-weight: bold;
   margin: 5px 20px;
+  color: #333333;
 }
 
 h2 {
@@ -28,6 +38,7 @@ h2 {
   font-family: sans-serif;
   font-size: 50px;
   margin: 2px 20px;
+  color: #FF6600;
 }
 
 h3 {
@@ -52,9 +63,18 @@ style for textarea {
 }
 
 .login_info {
+  font-family: sans-serif;
+  display: block;
   text-align: right;
   margin: auto 0;
   padding: 10px;
+  text-decoration: none;
+  color: #FF6600;
+}
+.img {
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 0;
 }
 
 .shoe_container {
@@ -77,14 +97,37 @@ style for textarea {
   background-position: 50% 50%;
   background-repeat:   no-repeat;
   background-size: cover;
+  @include translateX(-50)
 }
+
+/*@import "compass/css3"*/
+
+/*.shoe_photo_resize {
+  float: left;*/
+  /*height:100%;*/
+  /*background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size: cover;*/
+  /*@include translateX(-50%)
+  max-height:100%;
+
+  @media(min-width: 800px) {
+    top: 50%;
+    left: 0;
+    max-height: none;
+    width: 100%;
+    @include translateY(-50%);
+  }*/
+/*}*/
 
 .shoe_details {
   color: rgba(255,255,255,1);
   background: black;
-  background: linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+  /*background: linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));
   background: -webkit-linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));
-  background: -moz-linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));
+  background: -moz-linear-gradient(bottom, rgba(180,180,180,1), rgba(0,0,0,.2));*/
   padding: 10px 0px 10px;
   line-height: 28px;
   text-align: center;

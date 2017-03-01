@@ -2,9 +2,11 @@
 <%= link_to 'Edit Post', edit_fan_post_path(@fan) %>
 <%= link_to 'Delete Profile', @fan, method: :delete %>
 <br>
-
+<br>
+<br>
+<br>
 <div class="img">
-  <img src="<%= @post.shoe_photo%>" />
+  <img src="<%= @post.shoe_photo%>">
   <h2><%= @post.shoe_name %></h2>
   <h3><%= @post.fan_message %></h3>
 </div>
