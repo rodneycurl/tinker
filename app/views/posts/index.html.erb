@@ -8,10 +8,15 @@
         <%= post.shoe_name %>
         <br>
         <%= post.fan_message %>
+        <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
+          <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
+        <% end %>
         <br>
-        <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
       </p>
         <br>
-        <img src= "<%= post.shoe_photo %>" class="shoe_photo_resize">
+        <%= link_to fan_post_path(post.fan_id, post) do %>
+          <img src= "<%= post.shoe_photo %>" class="shoe_photo_resize">
+       <% end %>
+
 </div>
   <% end %>

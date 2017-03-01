@@ -13,20 +13,28 @@
  *= require_tree .
  *= require_self
  */
-
+body {
+  margin: 0;
+}
 p {
   text-align: left;
   font-family: sans-serif;
+  font-size: 24px;
+  margin: 5px 20px;
 }
 
 h2 {
   text-align: left;
   font-family: sans-serif;
+  font-size: 50px;
+  margin: 2px 20px;
 }
 
 h3 {
   text-align: left;
   font-family: sans-serif;
+  font-size: 30px;
+  margin: 2px 20px;
 }
 
 h4 {
@@ -43,11 +51,32 @@ style for textarea {
   font-family: sans-serif;
 }
 
+.login_info {
+  text-align: right;
+  margin: auto 0;
+  padding: 10px;
+}
+
 .shoe_container {
   display: inline-block;
   position:relative;
+  overflow: hidden;
   margin-right:-3px;
-  margin-bottom:-17px;
+  margin-bottom:-21px;
+  width: 360px;
+  height: 360px;
+}
+
+.shoe_photo_resize:hover {
+  transform: scale(2,2)
+}
+
+.shoe_photo_resize {
+  float: left;
+  height:100%;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size: cover;
 }
 
 .shoe_details {
@@ -71,17 +100,6 @@ style for textarea {
 .img {
   position: absolute;
   width: 100%;
-}
-
-.shoe_photo_resize {
-  /*position: absolute;*/
-  float: left;
-  /*overflow: hidden;*/
-  width:  400px;
-  height: 400px;
-  /*background-position: 50% 50%;
-  background-repeat:   no-repeat;
-  background-size: cover;*/
 }
 
 .fanmessage {

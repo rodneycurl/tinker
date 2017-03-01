@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tinker</title>
+    <title>Tinker's World</title>
+    <%= favicon_link_tag "http://assets.macerichepicenter.com/FileManager/_shared/Retailers/Logos/nike-logo-orange-svg_300x300.jpg" %>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,9 +12,13 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+  <div class="login_info"
     <%= link_to "Sign Up", new_fan_registration_path %>
+    <%= link_to "View Profile", current_fan %>
     <%= link_to "Sign out", destroy_fan_session_path, :method => :delete %>
     <%= link_to "Login", new_fan_session_path %>
+  </div>
+
     <%= yield %>
   </body>
 </html>

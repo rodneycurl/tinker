@@ -1,17 +1,19 @@
 <br><br>
-<%= link_to 'Back', fans_path %>
+<%= link_to 'Back', root_path %>
 <%= link_to 'Edit Profile', edit_fan_path(@fan) %>
 <%= link_to 'Delete Profile', @fan, method: :delete %>
+
 <br>
 <img src="<%= @fan.photo %>" >
 <h2><%= @fan.name %></h2>
 <h3><%= @fan.location %></h3>
 <h3><%= @fan.age %></h3>
 
-<%= link_to 'Create New Post', new_fan_post_path(@fan) %>
 <br>
 <br>
-
-<% @fan.posts.each do |post| %>
+<%= link_to 'Create New Post (+)', new_fan_post_path(@fan) %>
+<% @posts.each do |post| %>
+  <br>
+  <br>
   <%= link_to post.shoe_name, fan_post_path(@fan, post) %>
 <% end %>

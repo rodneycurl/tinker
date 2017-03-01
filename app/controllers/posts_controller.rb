@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # index
   def index
     # @fan = Fan.find(params[:fan_id])
-    @posts = Post.all
+    @posts = Post.order("id DESC")
   end
 
   # new

@@ -9,6 +9,7 @@ class FansController < ApplicationController
   #show
   def show
     @fan = Fan.find(params[:id])
+    @posts = @fan.posts
   end
 
   # new
