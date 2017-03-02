@@ -9,7 +9,7 @@ class FansController < ApplicationController
   #show
   def show
     @fan = Fan.find(params[:id])
-    @posts = @fan.posts
+    @posts = @fan.posts.order("id DESC")
   end
 
   # new

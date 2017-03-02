@@ -1,6 +1,6 @@
-<%= link_to 'Back', root_path %>
-<%= link_to 'Edit Profile', edit_fan_path(@fan) %>
-<%= link_to 'Delete Profile', @fan, method: :delete %>
+<%= link_to 'Back', root_path, class: "navbutton" %>
+<%= link_to 'Edit Profile', edit_fan_path(@fan), class: "navbutton" %>
+<%= link_to 'Delete Profile', @fan, class: "navbutton", method: :delete %>
 <br>
 <br>
   <div class="profilephoto">
@@ -14,33 +14,34 @@
 <br>
 <br>
 <br>
+<br>
   <div class="fullwidthpixel">
   </div>
 
-<br>
-<br>
-  <div class="newpostbox">
-    <%= link_to 'Create New Post (+)', new_fan_post_path(@fan) %>
-  </div>
-  <br>
+
+  <%= link_to new_fan_post_path(@fan) do %>
+    <div class="newpostbox">
+      CREATE NEW POST
+    </div>
+  <% end %>
+
 
   <div class="posthistory">
-<% @posts.each do |post| %>
+    <% @posts.each do |post| %>
 
-<div class='shoe_container'>
-  <%= link_to fan_post_path(post.fan_id, post) do %>
-    <img src= "<%= post.shoe_photo %>" class="shoe_photo_resize">
-    <p class= "shoe_details">
-     <%= post.shoe_name %>
-     <%= post.fan_message %>
-     <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
-       <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
+    <div class='shoe_container'>
+      <%= link_to fan_post_path(post.fan_id, post) do %>
+        <img src= "<%= post.shoe_photo %>" class="shoe_photo_resize">
+        <p class= "shoe_details">
+         <%= post.shoe_name %>
+         <%= post.fan_message %>
+         <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
+           <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
+         <% end %>
+         <br>
+       </p>
+
      <% end %>
-     <br>
-   </p>
-
- <% end %>
-  <%= link_to post.shoe_name, fan_post_path(@fan, post) %>
+    </div>
+    <% end %>
 </div>
-<% end %>
-  </div>

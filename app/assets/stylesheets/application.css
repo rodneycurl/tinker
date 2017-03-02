@@ -30,7 +30,7 @@ p {
   font-family: sans-serif;
   font-size: 19px;
   font-weight: bold;
-  margin: 5px 20px;
+  margin: 5px 20px 0px 40px;
   color: #333333;
 }
 
@@ -38,7 +38,7 @@ h2 {
   text-align: left;
   font-family: sans-serif;
   font-size: 50px;
-  margin: 2px 20px;
+  margin: 0px 40px 20px;
   color: #FF6600;
 }
 
@@ -75,6 +75,88 @@ style for textarea {
   font-family: sans-serif;
 }
 
+/*Navigation Button Style*/
+.navbutton {
+-moz-box-shadow: inset 0px 1px 0px 0px #FF6600;
+-webkit-box-shadow: inset 0px 1px 0px 0px #FF6600;
+box-shadow: inset 0px 1px 0px 0px #FF6600;
+background-color: #FF6600;
+border: 1px solid #FF6600;
+display: inline-block;
+cursor: pointer;
+color: #FFFFFF;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 14px;
+padding: 10px 20px;
+/*width: 80px;*/
+text-align: center;
+margin: -10px 0px 20px 20px;
+/*text-decoration: none;*/
+text-transform: uppercase;
+}
+/*Form Style*/
+.new_post, .edit_fan {
+      font-family: 'Open Sans Condensed', arial, sans;
+  width: 80%;
+  padding: 30px;
+  background: #FFF;
+  margin: 0px 20px 0px 15px;
+  /*box-shadow: 0px 0px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 1px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 0px 1px rgba(0,0,0,1);*/
+}
+
+.new_post h2 {
+  /*background: #4D4D4D;*/
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #797979;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+  margin: -30px -30px 30px -20px;
+}
+
+.inputstyle {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin: 0px 0px 10px 0px;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 45px;
+}
+
+.formbuttonstyle {
+  -moz-box-shadow: inset 0px 1px 0px 0px #FF6600;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #FF6600;
+  box-shadow: inset 0px 1px 0px 0px #FF6600;
+  background-color: #FF6600;
+  border: 1px solid #FF6600;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  padding: 30px 100px;
+  /*width: 80px;*/
+  text-align: center;
+  /*text-decoration: none;*/
+  text-transform: uppercase;
+}
+
+.formbuttonstyle:hover {
+  background:linear-gradient(to bottom, #FF5500 5%, #FF5500 100%);
+  background-color:#FF6600;
+}
+
+/*Log In Style*/
 .login_info {
   font-family: sans-serif;
   display: block;
@@ -151,16 +233,21 @@ style for textarea {
   font-weight: bold;
 }
 
+/*Fan Profile Style*/
 .profilephoto img {
   border-radius: 50%;
   float: left;
   outline-color: red;
   width:128px;
-  margin: 10px;
+  margin: 10px 0px 0px 20px;
   border:10px solid #FF6600;
   border-radius: 500px;
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
+}
+
+.faninfo {
+  margin: 0px 0px 0px 170px;
 }
 
 .faninfo h2 h3 {
@@ -168,7 +255,11 @@ style for textarea {
 }
 
 .faninfo h2 {
-  margin: 7px;
+  margin: 0px 0px 1px 11px;
+}
+
+.faninfo h3 {
+  margin: 0px 0px 1px 12px;
 }
 
 .fullwidthpixel {
@@ -185,17 +276,26 @@ style for textarea {
 
 .newpostbox {
   /*float: left;*/
-  height:100%;
-  /*background-position: 50% 50%;*/
   background-repeat:   no-repeat;
   background-size: cover;
-  @include translateX(-50)
-  font-weight: bold;
+  background-color: #FF6600;
+  font-size: 50px;
+  font-family: sans-serif;
+  margin: -1px 0px 0px 0px;
+  padding: 10px 10px 10px 20px;
+  /*text: center;*/
+  color: #FFF;
+}
+
+/*.newpostcontainer {
   width: 360px;
   height: 360px;
-  background-color: #333;
-  outline: #333 solid;
-}
+  float:left;
+}*/
+
+/*img.shoe_photo_resize {
+  float:left;
+}*/
 
 
 

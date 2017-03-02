@@ -1,21 +1,23 @@
-<%= form_for(@fan) do |f| %>
+<div class="fullwidthpixel">
+</div>
 
+<%= form_for(@fan) do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, class: "inputstyle" %>
   <br>
   <br>
   <%= f.label :location %>
-  <%= f.text_field :location %>
+  <%= f.text_field :location, class: "inputstyle"  %>
   <br>
   <br>
   <%= f.label :age %>
-  <%= f.text_field :age %>
+  <%= f.text_field :age, class: "inputstyle"  %>
   <br>
   <br>
   <%= f.label :photo %>
-  <%= f.text_field :photo %>
+  <%= f.text_field :photo, class: "inputstyle"  %>
   <br>
   <br>
-  <%= f.submit %>
+  <%= f.submit class: "formbuttonstyle" %>
 
 <% end %>

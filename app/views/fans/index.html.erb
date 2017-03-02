@@ -2,6 +2,8 @@
 <%= link_to "Add New Fan", new_fan_path %>
   <br>
   <br>
+  <div class="fullwidthpixel">
+  </div>
   <% @fans.each do |fan| %>
     <%= link_to fan.name, fan_path(fan) %>
     <br>

@@ -1,17 +1,17 @@
 <%= form_for [@fan, @post] do |f| %>
-
+  <h2>Create Your New Post For Tinker Here</h2>
   <%= f.label :shoe_name %>
-  <%= f.text_field :shoe_name %>
+  <%= f.text_field :shoe_name, class: "inputstyle" %>
   <br>
   <br>
   <%= f.label :shoe_photo %>
-  <%= f.text_field :shoe_photo %>
+  <%= f.text_field :shoe_photo, class: "inputstyle" %>
   <br>
   <br>
   <%= f.label :fan_message %>
-  <%= f.text_field :fan_message %>
+  <%= f.text_field :fan_message, class: "inputstyle" %>
   <br>
   <br>
-  <%= f.submit %>
+  <%= f.submit class: "formbuttonstyle" %>
 
 <% end %>
