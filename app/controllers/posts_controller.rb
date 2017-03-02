@@ -47,7 +47,7 @@ class PostsController < ApplicationController
     @post.destroy
     @fan = Fan.find(@post.fan_id)
 
-    redirect_to fan_path(@house)
+    redirect_to fan_path(@fan)
   end
 
   private

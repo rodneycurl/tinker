@@ -12,12 +12,17 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
   <div class="login_info">
+    <% if (fan_signed_in? ) %>
+    <div class="login_btn">
     <%= link_to "View Profile", current_fan %>
-    <%= link_to "Sign Up", new_fan_registration_path %>
-    <%= link_to "Sign In", fan_session_path %>
-    <%= link_to "Sign out", destroy_fan_session_path, :method => :delete %>
+    <%= link_to "Sign Out", destroy_fan_session_path, :method => :delete %>
+    <% else %>
     <%= link_to "Login", new_fan_session_path %>
+    <%= link_to "Sign Up", new_fan_registration_path %>
+    <% end %>
+    </div>
   </div>
 
     <%= yield %>

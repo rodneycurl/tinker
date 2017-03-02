@@ -31,13 +31,17 @@
 
     <div class='shoe_container'>
       <%= link_to fan_post_path(post.fan_id, post) do %>
+      <br>
         <img src= "<%= post.shoe_photo %>" class="shoe_photo_resize">
+      <% end %>
         <p class= "shoe_details">
          <%= post.shoe_name %>
          <%= post.fan_message %>
          <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
+         <br>
            <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
-         <% end %>
+           <%= link_to "Delete Post", [@fan, post], method: :delete %>
+
          <br>
        </p>
 

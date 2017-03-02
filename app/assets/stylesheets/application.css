@@ -156,6 +156,24 @@ text-transform: uppercase;
   background-color:#FF6600;
 }
 
+.login_info a {
+  -moz-box-shadow: inset 0px 1px 0px 0px #FF6600;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #FF6600;
+  box-shadow: inset 0px 1px 0px 0px #FF6600;
+  background-color: #FF6600;
+  border: 1px solid #FF6600;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  padding: 10px 20px;
+  /*width: 80px;*/
+  text-align: center;
+  /*text-decoration: none;*/
+  text-transform: uppercase;
+}
+
 /*Log In Style*/
 .login_info {
   font-family: sans-serif;
@@ -163,9 +181,9 @@ text-transform: uppercase;
   text-align: right;
   margin: auto 0;
   padding: 10px;
-  text-decoration: none;
   color: #FF6600;
 }
+
 .img {
   width: 100%;
   background-size: 100% 100%;
