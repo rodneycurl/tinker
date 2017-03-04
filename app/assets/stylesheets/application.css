@@ -208,6 +208,18 @@ text-transform: uppercase;
   z-index: 1;
 }
 
+.img img {
+  width: 100%;
+  background-size: cover;
+  z-index: 1;
+}
+
+body h2 {
+  margin: -40px 30px 0px 40px;
+  background-color: white;
+  height:auto;
+}
+
 .shoe_container {
   display: inline-block;
   position:relative;
@@ -218,11 +230,7 @@ text-transform: uppercase;
   height: 360px;
 }
 
-.shoe_container img {
-  width: 100%;
-  background-size: cover;
-  z-index: 1;
-}
+
 /*UTILIZE FLEXBOX */
   /*@media screen and (max-width: 600px){
   main {
