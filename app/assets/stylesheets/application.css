@@ -204,8 +204,8 @@ text-transform: uppercase;
 
 .img {
   width: 100%;
-  background-size: 100% 100%;
-  z-index: 0;
+  background-size: cover;
+  z-index: 1;
 }
 
 .shoe_container {
