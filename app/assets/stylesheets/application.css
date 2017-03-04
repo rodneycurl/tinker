@@ -216,7 +216,13 @@ text-transform: uppercase;
   margin-bottom:-21px;
   width: 360px;
   height: 360px;
+}
 
+.shoe_container img {
+  width: 100%;
+  background-size: cover;
+  z-index: 1;
+}
 /*UTILIZE FLEXBOX */
   /*@media screen and (max-width: 600px){
   main {
