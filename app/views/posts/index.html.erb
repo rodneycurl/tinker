@@ -1,25 +1,29 @@
-<h2>TINKER'S WORLD</h2>
-<p>Share your favorite Tinker Hatfield shoe designs</p>
-<br>
+<div class="nav-container">
+  <h2>TINKER'S WORLD</h2>
+  <p>Share your favorite Tinker Hatfield shoe designs</p>
+  <br>
+</div>
 <div class="fullwidthpixelhomepage">
 </div>
 
+<div class="shoe-wrapper">
   <% @posts.each do |post| %>
-<div class= "shoe_container">
-       <p class= "shoe_details">
-        <%= post.shoe_name %>
-        <br>
-        <%= post.fan_message %>
-        <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
-          <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
-        <% end %>
-        <br>
-      </p>
-        <br>
-        <%= link_to fan_post_path(post.fan_id, post) do %>
-          <img src= "<%= post.shoe_photo %>" class="shoe_photo_resize">
-       <% end %>
-</div>
+  <div class= "shoe_container">
+    <p class= "shoe_details">
+      <%= post.shoe_name %>
+      <br>
+      <%= post.fan_message %>
+      <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
+      <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
+      <% end %>
+      <br>
+    </p>
+    <br>
+    <%= link_to fan_post_path(post.fan_id, post) do %>
+    <img src= "<%= post.shoe_photo %>" class="shoe_photo_resize">
+    <% end %>
+  </div>
   <% end %>
+</div>
 <embed src="path/to/background.mp3" autostart="true" loop="true" hidden="true"><embed>
-<footer><a href="http://dribble.com/curl">© 2017 All Rights Reserved Created By Rodney Curl</a></footer>
+  <footer><a href="http://dribble.com/curl">© 2017 All Rights Reserved Created By Rodney Curl</a></footer>
