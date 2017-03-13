@@ -20,6 +20,6 @@ Have fun! Create a profile and start uploading some of your favorite shoe design
 
 * Go to view the application on the LocalHost:3000
 
-Just Do It!
+* Just Do It!
 
-If you would like to just view the site feel free to visit https://tinkers-world.herokuapp.com/ 
+If you would like to just view the site feel free to visit https://tinkers-world.herokuapp.com/
