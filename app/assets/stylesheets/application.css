@@ -241,6 +241,10 @@ body h2 {
   -moz-transition: height .5s;
 }
 
+.shoe-wrapper {
+  margin: auto 0;
+}
+
 .img {
   position: absolute;
   width: 100%;
