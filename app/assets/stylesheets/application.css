@@ -19,6 +19,8 @@ body p {
 
 body h2 {
   margin: -100px 30px 0px 40px;
+  background-color: white;
+  height:auto;
 }
 
 p {
@@ -193,12 +195,6 @@ text-transform: uppercase;
   width: 100%;
   background-size: cover;
   z-index: 1;
-}
-
-body h2 {
-  margin: -40px 30px 0px 40px;
-  background-color: white;
-  height:auto;
 }
 
 .shoe_container {
