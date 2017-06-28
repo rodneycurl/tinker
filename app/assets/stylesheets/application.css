@@ -77,27 +77,27 @@ style for textarea {
 
 /*Navigation Button Style*/
 .navbutton {
--moz-box-shadow: inset 0px 1px 0px 0px #FF6600;
--webkit-box-shadow: inset 0px 1px 0px 0px #FF6600;
-box-shadow: inset 0px 1px 0px 0px #FF6600;
-background-color: #FF6600;
-border: 1px solid #FF6600;
-display: inline-block;
-cursor: pointer;
-color: #FFFFFF;
-font-family: 'Open Sans Condensed', sans-serif;
-font-size: 14px;
-padding: 10px 20px;
-/*width: 80px;*/
-text-align: center;
-margin: -10px 0px 20px 20px;
-/*text-decoration: none;*/
-text-transform: uppercase;
+  -moz-box-shadow: inset 0px 1px 0px 0px #FF6600;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #FF6600;
+  box-shadow: inset 0px 1px 0px 0px #FF6600;
+  background-color: #FF6600;
+  border: 1px solid #FF6600;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  padding: 10px 20px;
+  /*width: 80px;*/
+  text-align: center;
+  margin: -10px 0px 20px 20px;
+  /*text-decoration: none;*/
+  text-transform: uppercase;
 }
 
 /*Form Style*/
 .new_post, .edit_fan, .new_fan_registration{
-      font-family: 'Open Sans Condensed', arial, sans;
+  font-family: 'Open Sans Condensed', arial, sans;
   width: 80%;
   padding: 30px;
   background: #FFF;
