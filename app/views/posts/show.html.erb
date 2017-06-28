@@ -10,9 +10,5 @@
   <h2><%= @post.shoe_name %></h2>
   <h3><%= @post.fan_message %></h3>
 </div>
-<h1>TEST</h1>
-<p>Posted By</p>
-<div class="profilephoto">
-  <img src="<%= @fan.photo %>">
-</div>
+
 <%= link_to 'Create New Post', new_fan_post_path(@fan) %>
