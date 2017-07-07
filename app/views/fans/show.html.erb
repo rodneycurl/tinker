@@ -38,7 +38,7 @@
       <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
       <br>
       <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
-      <%= link_to "Delete Post", [@fan, post], method: :delete %>
+      <!-- <%= link_to "Delete Post", [@fan, post], method: :delete %> -->
       <br>
     </p>
 
