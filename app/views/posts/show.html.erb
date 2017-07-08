@@ -1,14 +1,11 @@
-<%= link_to 'Back', root_path, class: "navbutton" %>
-<%= link_to 'Edit Post', edit_fan_post_path(@fan), class: "navbutton" %>
+<%= link_to 'Back', root_path, class: "nav-button" %>
+<%= link_to 'Edit Post', edit_fan_post_path(@fan), class: "nav-button" %>
+<%= link_to 'Create New Post', new_fan_post_path(@fan), class: "nav-button" %>
 <!-- <%= link_to 'Delete Profile', @fan, method: :delete, class: "navbutton" %> -->
-<br>
-<br>
-<br>
-<br>
-<div class="img">
-  <img src="<%= @post.shoe_photo%>">
-  <h2><%= @post.shoe_name %></h2>
-  <h3><%= @post.fan_message %></h3>
+<div class="container"
+  <div class="img">
+    <img src="<%= @post.shoe_photo%>">
+    <h2 id="shoe-post-name"><%= @post.shoe_name %></h2>
+    <h3><%= @post.fan_message %></h3>
+  </div>
 </div>
-
-<%= link_to 'Create New Post', new_fan_post_path(@fan) %>

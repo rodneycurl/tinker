@@ -4,27 +4,21 @@
     <title>Tinker's World</title>
     <%= favicon_link_tag "http://assets.macerichepicenter.com/FileManager/_shared/Retailers/Logos/nike-logo-orange-svg_300x300.jpg" %>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
-  <div class="login_info">
-    <% if (fan_signed_in? ) %>
-    <div class="login_btn">
-    <%= link_to "View Profile", current_fan %>
-    <%= link_to "Sign Out", destroy_fan_session_path, :method => :delete %>
-    <% else %>
-    <%= link_to "Login", new_fan_session_path %>
-    <%= link_to "Sign Up", new_fan_registration_path %>
-    <% end %>
+    <div class="login-info">
+      <% if (fan_signed_in? ) %>
+          <%= link_to "View Profile", current_fan %>
+          <%= link_to "Sign Out", destroy_fan_session_path, :method => :delete %>
+      <% else %>
+          <%= link_to "Login", new_fan_session_path %>
+          <%= link_to "Sign Up", new_fan_registration_path %>
+      <% end %>
     </div>
-  </div>
-
     <%= yield %>
   </body>
 </html>

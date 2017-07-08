@@ -2,29 +2,23 @@
   <!-- header and sub-header -->
   <h2>TINKER'S WORLD</h2>
   <p>Share your favorite Tinker Hatfield shoe designs</p>
-  <br>
-</div>
-<div class="fullwidthpixelhomepage">
 </div>
 
 <!-- create the grid for the post -->
 <div class="shoe-wrapper">
   <% @posts.each do |post| %>
-  <div class= "shoe_container">
-    <p class= "shoe_details">
-      <%= post.shoe_name %>
-      <br>
-      <%= post.fan_message %>
-      <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
-      <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
+    <div class= "shoe-container">
+      <p class= "shoe-details">
+        <%= post.shoe_name %>
+        <%= post.fan_message %>
+        <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
+          <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
+        <% end %>
+      </p>
+      <%= link_to fan_post_path(post.fan_id, post) do %>
+        <img src= "<%= post.shoe_photo %>" class="shoe-photo-resize">
       <% end %>
-      <br>
-    </p>
-    <br>
-    <%= link_to fan_post_path(post.fan_id, post) do %>
-    <img src= "<%= post.shoe_photo %>" class="shoe_photo_resize">
-    <% end %>
-  </div>
+    </div>
   <% end %>
 </div>
 

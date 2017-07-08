@@ -1,4 +1,4 @@
-a.navbutton{
+a.nav-button{
   margin: 10px 0px 0px 12px;
   outline-color: #000;
 }
@@ -76,7 +76,7 @@ style for textarea {
 }
 
 /*Navigation Button Style*/
-.navbutton {
+.nav-button {
   -moz-box-shadow: inset 0px 1px 0px 0px #FF6600;
   -webkit-box-shadow: inset 0px 1px 0px 0px #FF6600;
   box-shadow: inset 0px 1px 0px 0px #FF6600;
@@ -88,27 +88,29 @@ style for textarea {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 14px;
   padding: 10px 20px;
-  /*width: 80px;*/
   text-align: center;
   margin: -10px 0px 20px 20px;
-  /*text-decoration: none;*/
   text-transform: uppercase;
 }
 
 /*Form Style*/
-.new_post, .edit_fan, .new_fan_registration{
+.form-style {
   font-family: 'Open Sans Condensed', arial, sans;
   width: 80%;
   padding: 30px;
   background: #FFF;
   margin: 0px 20px 0px 15px;
-  /*box-shadow: 0px 0px 1px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 1px rgba(0,0,0,1);
-  -webkit-box-shadow: 0px 0px 1px rgba(0,0,0,1);*/
+}
+
+.form-group {
+  padding-bottom: 30px;
+}
+
+.shoe-wrapper {
+  padding-top: 18px;
 }
 
 .new_post h2 {
-  /*background: #4D4D4D;*/
   text-transform: uppercase;
   font-family: sans-serif;
   color: #797979;
@@ -118,7 +120,7 @@ style for textarea {
   margin: -30px -30px 30px -20px;
 }
 
-.inputstyle {
+.input-style {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -134,7 +136,7 @@ style for textarea {
   height: 45px;
 }
 
-.formbuttonstyle {
+.form-button-style {
   -moz-box-shadow: inset 0px 1px 0px 0px #FF6600;
   -webkit-box-shadow: inset 0px 1px 0px 0px #FF6600;
   box-shadow: inset 0px 1px 0px 0px #FF6600;
@@ -152,12 +154,12 @@ style for textarea {
   text-transform: uppercase;
 }
 
-.formbuttonstyle:hover {
+.form-button-style:hover {
   background:linear-gradient(to bottom, #FF5500 5%, #FF5500 100%);
   background-color:#FF6600;
 }
 
-.login_info a {
+.login-info a {
   -moz-box-shadow: inset 0px 1px 0px 0px #FF6600;
   -webkit-box-shadow: inset 0px 1px 0px 0px #FF6600;
   box-shadow: inset 0px 1px 0px 0px #FF6600;
@@ -176,12 +178,12 @@ style for textarea {
 }
 
 /*Log In Style*/
-.login_info {
+.login-info {
   font-family: sans-serif;
   display: block;
   text-align: right;
   margin: auto 0;
-  padding: 10px;
+  padding: 10px 10px 70px 0px;
   color: #FF6600;
 }
 
@@ -197,21 +199,21 @@ style for textarea {
   z-index: 1;
 }
 
-.shoe_container {
+.shoe-container {
   display: inline-block;
   position:relative;
   overflow: hidden;
   margin-right:-3px;
-  margin-bottom:-21px;
+  margin-bottom:-3px;
   width: 360px;
   height: 360px;
 }
 
-.shoe_photo_resize:hover {
+.shoe-photo-resize:hover {
   transform: scale(2,2)
 }
 
-.shoe_photo_resize {
+.shoe-photo-resize {
   float: left;
   height:100%;
   background-position: center;
@@ -220,7 +222,7 @@ style for textarea {
   transform: translateX(-50);
 }
 
-.shoe_details {
+.shoe-details {
   color: rgba(255,255,255,1);
   background: black;
   opacity: 0.7;
@@ -256,11 +258,11 @@ style for textarea {
 
 /*Fan Profile Style*/
 
-.profilephoto {
+.profile-photo {
   margin: -30px 0px 0px 0px;
 }
 
-.profilephoto img {
+.profile-photo img {
   border-radius: 50%;
   float: left;
   outline-color: red;
@@ -272,29 +274,17 @@ style for textarea {
   -moz-border-radius: 500px;
 }
 
-.faninfo {
+.fan-info {
   margin: 0px 0px 0px 170px;
+  padding-bottom: 100px;
 }
 
-.faninfo h2 h3 {
+.fan-info h2 h3 {
   float: right;
-}
-
-.faninfo h2 {
   margin: 0px 0px 1px 11px;
 }
 
-.faninfo h3 {
-  margin: 0px 0px 1px 12px;
-}
-
-.fullwidthpixel {
-  margin: 1px;
-  padding: .5px;
-  background: #E7E7E7;
-}
-
-.newpostbox {
+.new-post-box {
   /*float: left;*/
   background-repeat:   no-repeat;
   background-size: cover;
@@ -307,7 +297,19 @@ style for textarea {
   color: #FFF;
 }
 
-.newpostbox:hover {
+.new-post-box:hover {
   background:linear-gradient(to bottom, #FF5500 5%, #FF5500 100%);
   background-color:#FF6600;
+}
+
+.devise-links {
+  padding-top: 20px;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+#shoe-post-name {
+  padding: 50px;
 }

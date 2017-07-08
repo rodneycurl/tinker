@@ -1,48 +1,34 @@
-<div class="profilephoto">
+<div class="profile-photo">
   <img src="<%= @fan.photo %>">
 </div>
-<div class="faninfo">
+<div class="fan-info">
   <h2><%= @fan.name %>, <%= @fan.age %></h2>
   <h3><%= @fan.location %></h3>
-  <%= link_to 'Home', root_path, class: "navbutton" %>
-  <%= link_to 'Edit Profile', edit_fan_path(@fan), class: "navbutton" %>
-  <!-- <%= link_to 'Delete Profile', @fan, class: "navbutton", method: :delete %> -->
+  <%= link_to 'Home', root_path, class: "nav-button" %>
+  <%= link_to 'Edit Profile', edit_fan_path(@fan), class: "nav-button" %>
+  <!-- <%= link_to 'Delete Profile', @fan, class: "nav-button", method: :delete %> -->
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="fullwidthpixel">
-</div>
-
 
 <%= link_to new_fan_post_path(@fan) do %>
-<div class="newpostbox">
+<div class="new-post-box">
   CREATE NEW POST
 </div>
 <% end %>
 
-<div class="posthistory">
-  <% @posts.each do |post| %>
-
-  <div class='shoe_container'>
-    <%= link_to fan_post_path(post.fan_id, post) do %>
-    <br>
-    <img src= "<%= post.shoe_photo %>" class="shoe_photo_resize">
-    <% end %>
-
-    <p class= "shoe_details">
-      <%= post.shoe_name %>
-      <%= post.fan_message %>
-      <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
-      <br>
-      <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
-      <!-- <%= link_to "Delete Post", [@fan, post], method: :delete %> -->
-      <br>
-    </p>
-
-    <% end %>
-  </div>
-  <% end %>
+<div class="shoe-wrapper">
+    <% @posts.each do |post| %>
+      <div class="shoe-container">
+          <%= link_to fan_post_path(post.fan_id, post) do %>
+            <img src= "<%= post.shoe_photo %>" class="shoe-photo-resize">
+          <% end %>
+          <p class= "shoe-details">
+            <%= post.shoe_name %>
+            <%= post.fan_message %>
+            <% if (fan_signed_in? && (current_fan.id == post.fan_id)) %>
+              <%= link_to "Edit Post", edit_fan_post_path(post.fan_id, post) %>
+              <!-- <%= link_to "Delete Post", [@fan, post], method: :delete %> -->
+            <% end %>
+          </p>
+      </div>
+      <% end %>
 </div>

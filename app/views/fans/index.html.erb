@@ -1,10 +1,5 @@
 <h2>Fans</h2>
 <%= link_to "Add New Fan", new_fan_path %>
-  <br>
-  <br>
-  <div class="fullwidthpixel">
-  </div>
-  <% @fans.each do |fan| %>
-    <%= link_to fan.name, fan_path(fan) %>
-    <br>
-  <% end %>
+<% @fans.each do |fan| %>
+  <%= link_to fan.name, fan_path(fan) %>
+<% end %>

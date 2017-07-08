@@ -5,12 +5,10 @@ fan4 = Fan.create!(name: "Riley Freeman", location: "Woodcrest, MD", age: 8, pho
 fan5 = Fan.create!(name: "Rodney Stereo", location: "Trenton, NJ", age: 25, photo:"http://reactiongifs.me/wp-content/uploads/2014/03/the-ultimate-warrior-head-shaking-gif-james-brian.gif", email: "rodney.curl@nike.com", password: "password")
 
 post1 = Post.create(shoe_name: "Olympic Jordan 7s", shoe_photo: "https://images.solecollector.com/complex/image/upload/rndjkzpfcr2rq3v7e3bq.jpg", fan_message: "", fan_id: 1)
-post2 = Post.create(shoe_name: "Air Jordan 8s Olive", shoe_photo: "http://cdn5.kicksonfire.net/wp-content/uploads/2017/01/air-jordan-8-1-565x372.jpg?x66209", fan_message: "", fan_id: 1)
 post3 = Post.create(shoe_name: "Gold Yeezy Octobers", shoe_photo: "https://s-media-cache-ak0.pinimg.com/originals/b0/a2/63/b0a263942e2c0c15af2df924765f51ab.gif", fan_message: "", fan_id: 1)
 post4 = Post.create(shoe_name: "Air Jordans", shoe_photo: "http://i.skyrock.net/7577/57547577/pics/3145574554_1_2_rXgcrAYG.gif", fan_message: "", fan_id: 1)
 post5 = Post.create(shoe_name: "Air Jordan VII Cleats", shoe_photo: "http://images.complex.com/complex/image/upload/t_in_content_image/charles-woodson-air-jordan-vii-gold-cleats-04_o1ty2w.jpg", fan_message: "", fan_id: 1)
 post6 = Post.create(shoe_name: "Black Cat Air Jordan 13", shoe_photo: "https://espntheundefeated.files.wordpress.com/2017/01/main.gif?strip=all&w=3000&ssl=1", fan_message: "", fan_id: 1)
-post7 = Post.create(shoe_name: "Nike Hyperadapt", shoe_photo: "http://22fps.com/wp-content/uploads/NIKE-HYPERADAPT-AUTO-TIGHTEN-LOOSEN-SHOE-4.gif", fan_message: "", fan_id: 1)
 post8 = Post.create(shoe_name: "Nike Air Max 90 Levitate", shoe_photo: "https://images.milled.com/2016-03-17/pDYi7TfKsPBmKhGm/B2qnN5ZuQOkk.gif", fan_message: "", fan_id: 1)
 post9 = Post.create(shoe_name: "Air Mags", shoe_photo: "http://www.designboom.com/wp-content/uploads/2016/10/nike-mag-adaptive-fit-release-designboom-03.gif", fan_message: "", fan_id: 1)
 post10 = Post.create(shoe_name: "Concrete Air Jordan VI", shoe_photo: "http://newsneakernews.wpengine.netdna-cdn.com/wp-content/uploads/2016/03/air-jordan-4-white-cement-2016-restock-reminder-02-620x435.jpg", fan_message: "", fan_id: 1)
