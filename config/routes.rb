@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   #get 'fans/:id/posts' => 'fans#posts', :as => :fans_posts
   get 'posts', to: 'posts#index'
 
-  resources :fans do
-    resources :posts, only: [:new, :create, :show, :edit, :update, :destroy]
+  resources :fans, except: :destroy do
+    resources :posts, only: [:new, :create, :show, :edit, :update]
   end
 end

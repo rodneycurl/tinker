@@ -41,14 +41,14 @@ class PostsController < ApplicationController
     redirect_to fan_post_path(@fan, @post)
   end
 
-  # destroy
-  def destroy
-    @post = Post.find(params[:id])
-    @post.destroy
-    @fan = Fan.find(@post.fan_id)
-
-    redirect_to fan_path(@fan)
-  end
+  # # destroy
+  # def destroy
+  #   @post = Post.find(params[:id])
+  #   @post.destroy
+  #   @fan = Fan.find(@post.fan_id)
+  #
+  #   redirect_to fan_path(@fan)
+  # end
 
   private
   def post_params
